@@ -1,14 +1,13 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-    "/",
-    "/duDialog-master/",
-    "/fonts/",
-    "/sass/",
-    "/scripts/",
-    "/styles/",
-    "/Design.js",
-    "/index.html",
-    "/notebook-20722-128x128.ico"
+    "./",
+    "./duDialog-master/",
+    "./sass/",
+    "./scripts/",
+    "./styles/",
+    "./Design.js",
+    "./index.html",
+    "./notebook-20722-128x128.ico"
 ];
 
 self.addEventListener('install', function (event) {
