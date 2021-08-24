@@ -1,13 +1,23 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'my-site-cache-v2';
 var urlsToCache = [
     "/",
-    "/duDialog-master/",
-    "/sass/",
-    "/scripts/",
-    "/styles/",
-    "/Design.js",
-    "/index.html",
-    "/notebook-20722-128x128.ico"
+    "duDialog-master/",
+    "sass/",
+    "scripts/",
+    "styles/",
+    "Design.js",
+    "index.html",
+    "notebook-20722-128x128.ico",
+    "android-chrome-192x192.png",
+    "android-chrome-512x512.png",
+    "apple-touch-icon.png",
+    "Design.js",
+    "favicon.icon",
+    "favicon-16x16.png",
+    "favicon-32x32.png",
+    "notebook-20722-128x128.icon",
+    "site.webmanifest",
+    "sw.js"
 ];
 
 self.addEventListener('install', function (event) {
