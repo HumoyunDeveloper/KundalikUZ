@@ -195,6 +195,7 @@ textarea {
   outline: none;
   background-color: transparent;
   color: white;
+  display: none;
   font-family: Poppins;
   font-weight: bolder;
   font-size: 18px;
