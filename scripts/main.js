@@ -130,9 +130,10 @@ function manipulate() {
             }
             save(TASKS);
             manipulate();
+        }
         });
     });
-    }
+    
 }
 
 function save(_data) {
