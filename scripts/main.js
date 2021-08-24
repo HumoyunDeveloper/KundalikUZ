@@ -130,8 +130,8 @@ function manipulate() {
             }
             save(TASKS);
             manipulate();
-        }
         });
+    }
     });
     
 }
