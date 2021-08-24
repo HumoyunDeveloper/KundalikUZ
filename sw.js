@@ -15,8 +15,7 @@ var urlsToCache = [
     "apple-touch-icon.png",
     "favicon.ico",
     "favicon-16x16.png",
-    "favicon-32x32.png",
-    "notebook-20722-128x128.ico"
+    "favicon-32x32.png"
 ];
 
 self.addEventListener('install', function (event) {
