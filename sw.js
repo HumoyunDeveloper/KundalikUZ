@@ -31,15 +31,27 @@ self.addEventListener('install', function (event) {
     );
 });
 
-self.addEventListener('fetch', function (event) {
-    event.respondWith(
-        caches.match(event.request)
-        .then(function (response) {
-            // Cache hit - return response
-            if (response) {
-                return response;
-            }
-            return fetch(event.request);
-        })
-    );
+
+self.addEventListener("activate", function(event) {
+  console.log("[Servicework] Activate");
+  event.waitUntil(
+    caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        if (key !== urlsToCache) {
+          console.log("[ServiceWorker] Removing old cache shell", key);
+          return caches.delete(key);
+        }
+      }));
+    })
+  );
+});
+
+self.addEventListener("fetch", (event) => {
+  console.log("[ServiceWorker] Fetch");
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
+    })
+  );
+
 });
