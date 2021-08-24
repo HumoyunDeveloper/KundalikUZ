@@ -54,7 +54,7 @@ function manipulate() {
     }
 
     TASKS.forEach((task, ind) => {
-
+    if(task) {
         var tel = document.createElement("div");
         tel.dataset.id = ind;
         tel.classList.add("task");
@@ -132,7 +132,7 @@ function manipulate() {
             manipulate();
         });
     });
-
+    }
 }
 
 function save(_data) {
