@@ -13,12 +13,10 @@ var urlsToCache = [
     "android-chrome-192x192.png",
     "android-chrome-512x512.png",
     "apple-touch-icon.png",
-    "favicon.icon",
+    "favicon.ico",
     "favicon-16x16.png",
     "favicon-32x32.png",
-    "notebook-20722-128x128.icon",
-    "site.webmanifest",
-    "sw.js"
+    "notebook-20722-128x128.ico"
 ];
 
 self.addEventListener('install', function (event) {
