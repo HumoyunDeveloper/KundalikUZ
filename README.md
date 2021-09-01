@@ -1,2 +1,2 @@
 # KundalikUZ
-Kundalik
+Kundalik dasturi: <a href="https://kundalik.netlify.app
