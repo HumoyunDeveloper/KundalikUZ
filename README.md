@@ -1,2 +1,2 @@
 # KundalikUZ
-Kundalik dasturi: <a href="https://kundalik.netlify.app
+Kundalik dasturi: <a href="https://kundalik.netlify.app">Kirish</a>
